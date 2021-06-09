@@ -197,6 +197,7 @@ def normalize_payload(
 ) -> Tuple[Any, Dict]:
     if task in {
         "automatic-speech-recognition",
+        "audio-source-separation",
         "audio-to-audio",
     }:
         if sampling_rate is None:
